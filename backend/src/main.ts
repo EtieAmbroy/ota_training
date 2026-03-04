@@ -11,7 +11,7 @@ async function bootstrap() {
   // Browsers block frontend apps from calling backend APIs on different origins unless explicitly allowed.
   app.enableCors({
      // my frontend URL
-    origin: 'http://localhost:5174',
+    origin: 'http://localhost:5173',
   });
 
 

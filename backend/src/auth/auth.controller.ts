@@ -17,6 +17,8 @@ export class AuthController {
    */
 
   @Post('login')
+  // HttpStatus.CREATED corresponds to 201
+  // The request was successful, and a new resource was created.
   @HttpCode(HttpStatus.CREATED) // 201
   login(@Body() loginDto: LoginDto) {
     return this.authService.login(loginDto);
